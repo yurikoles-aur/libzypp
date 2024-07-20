@@ -1,10 +1,10 @@
 pkgbase = libzypp
 	pkgdesc = ZYpp Package Management library
-	pkgver = 17.30.0
+	pkgver = 17.35.9
 	pkgrel = 1
-	url = http://doc.opensuse.org/projects/libzypp/HEAD/
+	url = https://en.opensuse.org/Portal:Libzypp
 	arch = x86_64
-	license = GPL
+	license = GPL-2.0-or-later
 	makedepends = boost-libs
 	makedepends = gpgme
 	makedepends = libproxy
@@ -23,8 +23,9 @@ pkgbase = libzypp
 	makedepends = git
 	makedepends = gnupg
 	makedepends = graphviz
-	source = libzypp-17.30.0::https://github.com/openSUSE/libzypp/archive/17.30.0.tar.gz
-	sha256sums = 3410a4cf7a40467c544ad221f3116aab6ba198b27a9c150116c93b5950f74815
+	makedepends = cppcheck
+	source = libzypp-17.35.9.tgz::https://github.com/openSUSE/libzypp/archive/17.35.9.tar.gz
+	sha256sums = 385a6a719442e2997d61a00e6203160dc1c99aaa2eb33e3a612921b79e277d5a
 
 pkgname = libzypp
 	depends = boost-libs
@@ -36,6 +37,7 @@ pkgname = libzypp
 	depends = libxml2
 	depends = protobuf
 	depends = yaml-cpp
+	depends = zchunk
 
 pkgname = libzypp-doc
 	arch = any

@@ -1,5 +1,4 @@
-*.tar.gz
-src
-pkg
-*.pkg.*
-*.log
+*
+!PKGBUILD
+!.SRCINFO
+!.gitignore
