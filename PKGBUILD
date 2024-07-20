@@ -3,12 +3,12 @@
 
 pkgbase=libzypp
 pkgname=(libzypp libzypp-doc)
-pkgver=17.30.0
+pkgver=17.35.2
 pkgrel=1
 pkgdesc="ZYpp Package Management library"
 arch=('x86_64')
 url='http://doc.opensuse.org/projects/libzypp/HEAD/'
-license=('GPL')
+license=('GPL-2.0-or-later')
 makedepends=(
   'boost-libs'
   'gpgme'
@@ -29,8 +29,8 @@ makedepends=(
   'gnupg'
   'graphviz'
 )
-source=("${pkgname}-${pkgver}::https://github.com/openSUSE/${pkgname}/archive/${pkgver}.tar.gz")
-sha256sums=('3410a4cf7a40467c544ad221f3116aab6ba198b27a9c150116c93b5950f74815')
+source=("${pkgname}-${pkgver}.tgz::https://github.com/openSUSE/${pkgname}/archive/${pkgver}.tar.gz")
+sha256sums=('1c84904bd83f2881acb2f9dcab71bd811c831a045a1191f16a7ad7c201a9afd1')
 
 build() {
   cmake \
