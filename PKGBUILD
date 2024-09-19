@@ -6,7 +6,7 @@
 
 pkgbase=libzypp
 pkgname=(libzypp libzypp-doc)
-pkgver=17.35.9
+pkgver=17.35.11
 pkgrel=1
 pkgdesc="ZYpp Package Management library"
 arch=('x86_64')
@@ -32,9 +32,10 @@ makedepends=(
   'gnupg'
   'graphviz'
   'cppcheck'
+  'zchunk'
 )
 source=("${pkgname}-${pkgver}.tgz::https://github.com/openSUSE/${pkgname}/archive/${pkgver}.tar.gz")
-sha256sums=('385a6a719442e2997d61a00e6203160dc1c99aaa2eb33e3a612921b79e277d5a')
+sha256sums=('683bcb7398ac4df4a682e7f1c2b3807a3638a400eb631de3f51d1d1947cc9be7')
 
 build() {
   cmake -B build \
