@@ -1,12 +1,13 @@
 # Maintainer: Yurii Kolesnykov <root@yurikoles.com>
 # Contributor: Daan De Meyer <daan.j.demeyer@gmail.com>
 # Contributor: Joshua Smith <smolsheep@opensuse.org>
-
-# Pull Requests are welcome: https://github.com/yurikoles-aur/libzypp
+#
+# Pull Requests are welcome here: https://github.com/yurikoles-aur/libzypp
+#
 
 pkgbase=libzypp
 pkgname=(libzypp libzypp-doc)
-pkgver=17.35.9
+pkgver=17.35.14
 pkgrel=1
 pkgdesc="ZYpp Package Management library"
 arch=('x86_64')
@@ -32,9 +33,10 @@ makedepends=(
   'gnupg'
   'graphviz'
   'cppcheck'
+  'zchunk'
 )
 source=("${pkgname}-${pkgver}.tgz::https://github.com/openSUSE/${pkgname}/archive/${pkgver}.tar.gz")
-sha256sums=('385a6a719442e2997d61a00e6203160dc1c99aaa2eb33e3a612921b79e277d5a')
+sha256sums=('f808d6e75c21974539348f0f4e326e78ffe1bc1662175085cfee750fb57b5a75')
 
 build() {
   cmake -B build \
